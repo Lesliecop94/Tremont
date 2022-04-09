@@ -1,0 +1,68 @@
+.footer {
+    width: 100%;
+    padding: 50px;
+    color: black;
+
+    // WRAPPER FOOTER
+    .footer-main {
+        display: flex;
+        text-align: center;
+
+        // PARTIE GAUCHE
+        .footer-left {
+            width: 25%;
+
+            li {
+                list-style: none;
+                line-height: 35px;
+
+                &:first-child {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        // PARTIE CENTRALE
+        .footer-center {
+            width: 50%;
+
+            .h3-title {
+                font-size: 50px;
+                font-weight: 200;
+                margin: 0 0 50px;
+            }
+
+            .fa-twitter,
+            .fa-instagram {
+                padding-left: 20px;
+                color: black;
+                font-size: 2em;
+            }
+        }
+
+        // PARTIE DROITE
+        .footer-right {
+            width: 25%;
+
+            li {
+                list-style: none;
+                line-height: 35px;
+
+                &:first-child {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    // POWERED BY
+    p {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    a {
+        color: lightgrey;
+    }
+}

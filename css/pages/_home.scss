@@ -1,0 +1,70 @@
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/Stocksy_comp_461838.jpg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    .main-title{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    // SMALL TITLE
+    >div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        // BIG TITLE/LIENS
+        div{
+            font-size: 80px;
+            width: 100%;
+            margin: 0  50px ;
+            &.h2-title:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: .3s all ease-in-out;
+            }
+            // HOVER BG 1
+            &.h2-title:nth-of-type(1):before{               
+                background: url('../img/Stocksy_comp_461841-color.jpg') center/cover;
+                opacity: 0.9;
+            }
+
+            // HOVER BG 2
+            &.h2-title:nth-of-type(2):before{               
+                background: url('../img/Stocksy_comp_486556.jpg') center/cover;
+                opacity: 0.9;
+            }
+
+            // HOVER BG 3
+            &.h2-title:nth-of-type(3):before{               
+                background: url('../img/Stocksy_comp_821143-crop.jpg') center/cover;
+                opacity: 0.9;
+            }
+            // APPARITION DU BG
+            &.h2-title:hover:before{
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+            }
+            // LIENS HOME
+            a{
+                position: relative;
+                z-index: 1;
+                margin:5% 5% 0 5%;
+                border-bottom: 1px solid transparent;
+                transition: .3s all ease-in-out;
+                
+                &:hover{
+                    border-bottom: 1px solid white;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+// PROPRIETES HEADER
+.header{
+    margin: 0;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s all ease-in-out;
+    opacity: 1;
+    font-size: 80px;
+    font-weight: 200;
+}
+// DISPARITION DU HEADER AU SCROLL
+.header-not{
+    opacity: 0;
+}
+// HEADER STORY
+
+.bg-img
+  {
+     background: url(../img/Stocksy_comp_543118.jpg) center/cover;
+ }

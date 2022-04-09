@@ -1,0 +1,22 @@
+nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    z-index: 999;
+    .logo {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 25px;
+        a:hover{
+        color: white;
+        }
+    }
+
+    a {
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    
+}
