@@ -1,11 +1,13 @@
-.story{
+.story {
     width: 100%;
-// BG TITLE
-    .bg-img{
+
+    // BG TITLE
+    .bg-img {
         background: url('../img/Stocksy_comp_543118.jpg') center/cover;
         height: 100vh;
     }
-    .story-main{    
+
+    .story-main {
         color: black;
         display: flex;
         flex-wrap: nowrap;
@@ -13,12 +15,14 @@
         padding: 5% 5%;
 
         // PARTIE GAUCHE 
-        .main-left{
+        .main-left {
             width: 30%;
             margin-top: 10%;
-            p{
+
+            p {
                 line-height: 35px;
-                &:first-child{
+
+                &:first-child {
                     font-weight: 600;
                     font-style: italic;
                 }
@@ -26,18 +30,22 @@
         }
 
         // PARTIE CENTRALE
-        .main-center{
+        .main-center {
             width: 40%;
-            .story-hr{
+
+            .story-hr {
                 width: 10%;
                 text-align: center;
                 margin-bottom: 5%;
             }
-            .fa-twitter, .fa-instagram{
+
+            .fa-twitter,
+            .fa-instagram {
                 color: black;
                 font-size: 2em;
             }
-            p{
+
+            p {
                 font-size: 16px;
                 letter-spacing: 0px;
                 line-height: 2.5em;
@@ -47,12 +55,14 @@
         }
 
         // PARTIE DROITE
-        .main-right{
+        .main-right {
             margin-top: 10%;
             width: 30%;
-            p{
+
+            p {
                 line-height: 35px;
-                &:first-child{
+
+                &:first-child {
                     font-weight: 600;
                     font-style: italic;
                 }
@@ -60,12 +70,42 @@
         }
     }
 
-    hr{
+    hr {
         width: 80%;
         text-align: center;
         margin-bottom: 5%;
     }
-    a{
+
+    a {
         color: lightgrey;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .story {
+        width: 100%;
+        .story-main {
+            width: 100%;
+            flex-direction: column;
+
+            padding: 0% 0%;
+            // PARTIE GAUCHE 
+            .main-left {
+            display: none;
+            }  
+            // PARTIE CENTRALE
+            .main-center {
+                width: 100%;
+                padding: 25px;
+                p {
+                    font-size: 12px;
+                }
+            } 
+            // PARTIE DROITE
+            .main-right {
+            display: none;
+            }
+        }
     }
 }

@@ -14,14 +14,17 @@
     opacity: 1;
     font-size: 80px;
     font-weight: 200;
+    div{
+        a{
+            font-size: medium;
+        }
+    }
 }
-// DISPARITION DU HEADER AU SCROLL
-.header-not{
-    opacity: 0;
-}
+
 // HEADER STORY
 
 .bg-img
   {
-     background: url(../img/Stocksy_comp_543118.jpg) center/cover;
+  background: url(../img/Stocksy_comp_543118.jpg) center/cover;
  }
+

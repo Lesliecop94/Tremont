@@ -1,12 +1,15 @@
 .footer {
-    width: 100%;
-    padding: 50px;
+    width: 90%;
+    margin: 0 auto;
     color: black;
 
     // WRAPPER FOOTER
     .footer-main {
         display: flex;
         text-align: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
 
         // PARTIE GAUCHE
         .footer-left {
@@ -24,7 +27,7 @@
 
         // PARTIE CENTRALE
         .footer-center {
-            width: 50%;
+            width: 300px;
 
             .h3-title {
                 font-size: 50px;
@@ -53,6 +56,7 @@
                 }
             }
         }
+
     }
 
     // POWERED BY
@@ -64,5 +68,41 @@
 
     a {
         color: lightgrey;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+
+        .footer-main {
+            flex-direction: column;
+            text-align: center;
+
+            // PARTIE GAUCHE
+            .footer-left {
+                width: 100%;
+            }
+
+            // PARTIE CENTRALE
+            .footer-center {
+                display: none;
+            }
+
+            // PARTIE DROITE
+            .footer-right {
+                width: 100%;
+            }
+
+            ul {
+                width: 100%;
+                padding: 0;
+
+                li {
+                    font-size: 12px;
+                    width: 100%;
+                }
+
+            }
+        }
     }
 }
